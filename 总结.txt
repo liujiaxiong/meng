@@ -1,0 +1,56 @@
+简单常见的常用的bash命令 ，也叫git命令
+cd	目录名称
+
+cd ../  返回上一级
+
+mkdir+文件名	创建文件夹
+
+touch+文件名  创建文件
+
+touch web/index.html 	在web文件夹里和创建index文件
+
+rmdir+文件名称	删除 空的文件夹
+
+rm+文件名	删除文件
+
+rm -rf+文件夹名称	删除文件夹 文件夹里面的内容
+
+rm*	删除所有
+
+
+
+
+
+
+
+
+
+
+常用的GIT命令：
+
+
+初始化用户名  git config --golbal user.name
+初始化邮箱    git config --golbal user.email
+查看用户名	git config user.name
+初始化git仓库	git init
+查看仓库状态 	git status
+添加到暂存区	git add.
+提交到本地仓库中  git commit -m 备注信息
+创建忽略清单	touch .gitignore  （里面输入要忽略的文件名）
+设置远程仓库的变量名和地址	git remote add 变量名 地址
+查看本地仓库中远程仓库的信息	git remote -v
+第一次执行推送到远程仓库	git push -u 仓库名 master
+第二次推送			git push 
+克隆远程仓库			git clone + 地址
+获取远程仓库上更新 		git pull
+还原文件到上一个commit状态	git checkout
+还原文件到任意一个版本		git rest --hard commitID号
+还原文件到上一个版本		git rest --hard HEAD^
+常规查看日志			git log
+一行显示日志			git log --oneline
+强大的查看方式			git reflog
+查看分枝			git branch
+创建分枝			git branch +分枝名
+合并分枝			先回到主分枝上  git merge dev
+删除分枝			git branch -d 分枝名
+切换分枝			git checkout  分支名
